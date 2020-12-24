@@ -4,7 +4,7 @@ import datetime
 import argparse
 import numpy as np
 
-print ('Your sam file is being split')
+print('Your sam file is being split')
 print("Started at: " + str(datetime.datetime.now()))
 
 parser = argparse.ArgumentParser()
