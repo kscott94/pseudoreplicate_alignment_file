@@ -40,12 +40,12 @@ for i in range(pseudo_reps):
         for j in range(len(header)):
             samfile_split.write(header[j])
 
-# generate a random integer for each unique alignment id (qname). This integer will ensure the alignemnt record goes to the correspoding pseudoreplicate file
+# Generate a random integer for each unique alignment id (qname). This integer will ensure the alignemnt record goes to the correspoding pseudoreplicate file
 alignment_outbound = {}
 
 np.random.seed(args.s)
 for id in alignment_ids:
-    pseudo_rep = int(np.random.randint(1,pseudo_reps+1))
+    pseudo_rep = np.random.randint(1,pseudo_reps+1)
     alignment_outbound[id] = pseudo_rep
 
 # Add alignments to new file
