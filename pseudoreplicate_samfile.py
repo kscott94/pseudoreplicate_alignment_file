@@ -55,7 +55,7 @@ for id, rep in alignment_outbound.items():
         for row in samfile:
             r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16 = row.split('\t')
             if id == r1:
-                with open(split_file_list[rep-1], 'a+') as split_file_pseudorep:
+                with open(split_file_list[rep-1], 'a') as split_file_pseudorep:
                     split_file_pseudorep.write(row)
 
 print("Finished at: " + str(datetime.datetime.now()))
