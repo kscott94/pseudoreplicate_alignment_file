@@ -9,5 +9,5 @@ python3 pseudoreplicate_paired_samfile.py -i <file.sam> -r \<number of replicate
 
 
 Required python packages:
-numpy
+numpy \
 natsort 7.1.0
