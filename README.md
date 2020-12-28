@@ -8,6 +8,6 @@ From the command line, type:
 python3 pseudoreplicate_paired_samfile.py -i <file.sam> -r \<number of replicates\>
 
 
-Required python packages:
+Required python packages:\
 numpy \
 natsort 7.1.0
