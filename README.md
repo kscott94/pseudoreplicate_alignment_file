@@ -5,7 +5,7 @@ Ensure your alginment is in sam format and sorted by name. You can sort your sa 
 
 From the command line, type:
 
-python3 pseudoreplicate_paired_samfile.py -i <file.sam> -r \<number of replicates\>
+python3 pseudoreplicate_paired_samfile.py -i <file.sam> -r \<number of replicates\> -s \<seed\>
 
 
 Required python packages:\
