@@ -84,8 +84,9 @@ with open(alignfile, 'r') as f:
         index += 1
 
 #convert output to bam is args.b, and remove all temp files
-
 if args.b:
+    print('Converting sam to bam...')
+    print('Sorting by coordinate...')
     for file in split_file_list:
         name, ext = os.path.splitext(file)
         split_out_name = str(name) + '.bam'
