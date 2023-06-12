@@ -1,4 +1,4 @@
-# pseudoreplicate_alignment_file
+# pseudoreplicate BAM file
 This python script allows you to randomly split a sequence alignment file into several smaller files, called pseudoreplicates. Paired end reads will be retained within the same file. Also compatible with non-paired alignments. 
 
 Ensure your alginment is in sam format and sorted by name. You can sort your sa files using samtools sort with the -n option.
