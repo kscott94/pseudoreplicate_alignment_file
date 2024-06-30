@@ -6,6 +6,7 @@ import argparse
 import pysam as pys
 import numpy as np
 
+# Set up arg parser
 parser = argparse.ArgumentParser()
 parser.add_argument('-i', type=str, help='path to sam file')
 parser.add_argument('-r', type=int, default = 3, help='number of desired pseudoreplicates')
@@ -17,11 +18,12 @@ args = parser.parse_args()
 in_file = args.i
 pseudo_replicates = args.r
 
+# Start timer
 t1 = time.clock()
 
+# Check file extension
 in_file_name, in_file_ext = os.path.splitext(in_file)
 
-# Check file extension
 if not args.b and in_file_ext == ".bam":
     print('Your file must have a .sam extension.')
     print('If you are using a bam file, use -b flag.')
@@ -83,7 +85,7 @@ with open(alignfile, 'r') as f:
                 f3.write(samfile[index])
         index += 1
 
-#convert output to bam is args.b, and remove all temp files
+# Convert output to bam is args.b, and remove all temp files
 if args.b:
     print('Converting sam to bam...')
     print('Sorting by coordinate...')
@@ -92,8 +94,10 @@ if args.b:
         split_out_name = str(name) + '.bam'
         pys.sort("-o", split_out_name, file)
 
+# Remove temporary files
 os.remove(alignfile)
 
+# Stop clock and print run stats.
 t2 = time.clock()
 mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 print("time: " + str(round(t2-t1, 3)) + " sec")
