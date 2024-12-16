@@ -3,6 +3,7 @@ This python script allows you to randomly subsample a sequence alignment file (b
 
 Ensure your alginment is in sam format and sorted by name. You can sort your bam files using samtools sort while envoking the -n flag.
 
+# Usage: 
 From the command line, type:
 
 python3 pseudoreplicate_paired_samfile.py [ -r -b -s] -i <file.sam>
@@ -11,6 +12,6 @@ python3 pseudoreplicate_paired_samfile.py [ -r -b -s] -i <file.sam>
 -s: seed sequence\
 -b: bam file input
 
-Required python packages:\
+# Required python packages:\
 numpy \
 pysam
