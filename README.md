@@ -10,7 +10,7 @@ python3 pseudoreplicate_paired_samfile.py [ -r -b -s] -i <file.sam>
 
 -r: number of pseudoreplicates\
 -s: seed sequence\
--b: bam file input
+-b: if input is bam file (default is sam file)
 
 ### Required python packages:
 numpy \
