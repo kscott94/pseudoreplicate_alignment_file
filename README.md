@@ -12,6 +12,6 @@ python3 pseudoreplicate_paired_samfile.py [ -r -b -s] -i <file.sam>
 -s: seed sequence\
 -b: bam file input
 
-### Required python packages:\
+### Required python packages:
 numpy \
 pysam
