@@ -7,7 +7,7 @@ From the command line, type:
 
 python3 pseudoreplicate_paired_samfile.py [ -r -b -s] -i <file.sam>
 
--r: number of replicates\
+-r: number of pseudoreplicates\
 -s: seed sequence\
 -b: bam file input
 
