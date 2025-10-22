@@ -1,7 +1,7 @@
 # pseudoreplicate BAM file
-This python script allows you to randomly subsample a sequence alignment file (bam or sam format) into several smaller files, called pseudoreplicates. Paired-end reads will always be retained within the same file. Also compatible with non-paired alignments. 
+This python script allows you to randomly subsample without replacement a sequence alignment file (bam or sam format) into several smaller files, called pseudoreplicates. Paired-end reads will always be retained within the same file. Also compatible with non-paired alignments. 
 
-Ensure your alginment is in sam format and sorted by name. You can sort your bam files using samtools sort while envoking the -n flag.
+Ensure your alginment file is sorted by name. You can sort your alginment files using samtools sort while envoking the -n flag.
 
 ### Usage: 
 From the command line, type:
